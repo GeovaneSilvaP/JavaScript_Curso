@@ -1,13 +1,9 @@
 function mudarCor() {
-    const red = document.getElementById('red');
-    const blue = document.getElementById('blue');
-    const green = document.getElementById('green');
-    const yellow = document.getElementById('yellow');
+    const paragrafos = document.querySelectorAll('.cor');
 
-    red.style.color = "red";
-    blue.style.color = "blue";
-    green.style.color = "green";
-    yellow.style.color = "yellow";
+    for (const paragrafo of paragrafos) {
+        paragrafo.style.color = "red"
+    }
 }
 
 mudarCor();
